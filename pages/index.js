@@ -1,10 +1,15 @@
+import Landing from './components/Landing';
+import Form from './components/Form';
+import Head from 'next/head';
+
 export default function Home() {
   return (
     <section>
-      <div className='flex flex-col min-h-screen items-center justify-center'>
-        <h1 className='text-9xl font-bold'>ASTAGA</h1>
-        <h1 className='text-9xl font-bold'>RISS RISS</h1>
-      </div>
+      <Head>
+        <title>ToDos</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Landing />
     </section>
   )
 }
